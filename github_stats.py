@@ -476,7 +476,7 @@ Languages:
                         or not isinstance(author_obj.get("author", {}), dict)):
                     continue
                 author = author_obj.get("author", {}).get("login", "")
-                if author != self.username:
+                if author != self.username and author != "doctormay6":
                     continue
 
                 for week in author_obj.get("weeks", []):
